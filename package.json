@@ -1,0 +1,31 @@
+{
+  "name": "score-sync-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "tailwind build -i src/styles.css -o public/styles.css --watch",
+    "watch": "watch \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantum-sphere/score-sync-landing-page.git"
+  },
+  "keywords": [
+    "landing-page",
+    "javascript",
+    "html",
+    "tailwind"
+  ],
+  "author": "quantum-sphere",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quantum-sphere/score-sync-landing-page/issues"
+  },
+  "homepage": "https://github.com/quantum-sphere/score-sync-landing-page#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10",
+    "watch": "^1.0.2"
+  }
+}

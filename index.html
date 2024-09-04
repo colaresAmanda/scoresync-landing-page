@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Sync - Gerenciador de Competições</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-sans">
+    <header>
+      <nav
+        class="flex justify-between items-center px-4 py-2"
+        aria-label="Main Navigation"
+      >
+        <a
+          href="#"
+          class="flex gap-2 items-center"
+          aria-label="Score Sync - Gerenciador de Competições"
+        >
+          <img
+            src="./public/images/logo_image.svg"
+            alt="Score Sync logo"
+            class="w-10 h-10"
+          />
+          <div class="flex flex-col">
+            <span class="text-lg font-bold text-primary-600 -mb-1"
+              >ScoreSync</span
+            >
+            <span class="text-sm text-charcoal-600"
+              >Gerenciador de Competições</span
+            >
+          </div>
+        </a>
+        <ul class="flex gap-8" role="menu">
+          <li role="menuitem">
+            <a href="#" class="text-sm text-charcoal-600">Início</a>
+          </li>
+          <li role="menuitem">
+            <a href="#" class="text-sm text-charcoal-600">Modalidades</a>
+          </li>
+          <li role="menuitem">
+            <a href="#" class="text-sm text-charcoal-600">Funcionalidades</a>
+          </li>
+          <li role="menuitem">
+            <a href="#" class="text-sm text-charcoal-600">Planos</a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="px-6 py-2 text-sm bg-primary-200/75 rounded-full text-primary-600 font-semibold"
+          >Ver Planos</a
+        >
+      </nav>
+    </header>
+    <main class="bg-image">
+      <section
+        class="grid grid-cols-7 gap-16 pl-32 pr-16 py-24"
+        aria-labelledby="hero-heading"
+      >
+        <div class="flex flex-col gap-2 items-start col-span-3">
+          <p class="text-sm" aria-label="Introductory Text">
+            Organização e Gerenciamento Sem Esforço
+          </p>
+          <h1 id="hero-heading" class="text-3xl font-bold">
+            Sua solução definitiva para
+            <span class="text-primary-600">gerenciamento</span> de competições
+          </h1>
+          <p >
+            Gerencie suas competições de forma eficiente com o ScoreSync. Nosso
+            aplicativo simplifica todo o processo, desde a inscrição até as
+            classificações finais, garantindo uma experiência tranquila e
+            eficiente para organizadores e participantes.
+          </p>
+          <a
+            href="#"
+            class="px-6 py-2 text-lg bg-primary-600 rounded-full text-white font-semibold"
+            >Assinar agora</a
+          >
+        </div>
+        <div class="col-span-4">
+          <img
+          class="w-[232rem] "
+            src="./public/images/hero-image.png"
+            alt="Hero image showing competition management interface"
+          />
+        </div>
+      </section>
+      <section>
+        <!-- Implement latter -->
+      </section>
+      <section class=" px-32 py-24">
+        <h2 class="text-2xl text-center font-bold mb-16">Para quais modalidades o ScoreSync é perfeito?</h2>
+        <ul class="flex flex-col items-center gap-y-16">
+            <div class="flex gap-10">
+                <li class="w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
+                    <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce">
+                    <div >
+                        <h4 class="font-semibold text-center">Competições Individuais</h4>
+                        <p class="text-xs text-center">Perfeito para atletas que competem sozinhos, permitindo uma gestão eficiente e personalizada das pontuações.</p>
+                    </div>
+                   
+                </li>
+                <li class="w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group ">
+                    <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce">
+                    <h4 class="font-semibold text-center">Torneios em Equipe</h4>
+                    <p class="text-xs text-center">Ideal para competições que envolvem times, facilitando a gestão das equipes e a organização das partidas.</p>
+                </li>
+                <li class="w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group ">
+                    <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce">
+                    <h4 class="font-semibold text-center">Eventos Esportivos</h4>
+                    <p class="text-xs text-center">Organize e administre grandes modalidades esportivas com eficiência, mantendo a competitividade e a forma física dos atletas.</p>
+                </li>
+            </div>
+           <div class="flex gap-10">
+            <li class="w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group ">
+                <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce">
+                <h4 class="font-semibold text-center">Competições Acadêmicas</h4>
+                <p class="text-xs text-center">Excelentes para competições acadêmicas, incentivando o estudo e o desenvolvimento dos participantes de forma efetiva.</p>
+            </li>
+            <!-- <li class="w-72 flex flex-col justify-center items-center shadow-lg rounded-xl p-12">
+                <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce">
+                <h4 class="font-semibold">Competições Acadêmicas</h4>
+                <p class="text-sm text-center">Excelentes para competições acadêmicas, incentivando o estudo e o desenvolvimento dos participantes de forma efetiva.</p>
+            </li> -->
+            <li class="w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group ">
+                <img src="./public/images/modalities/individual.svg" alt="" class="w-24 group-hover:animate-bounce ">
+                <h4 class="font-semibold text-center">Desafios Corporativos</h4>
+                <p class="text-xs text-center">Perfeito para empresas que querem estimular a competição interna, ajudando a aumentar a motivação e o engajamento dos colaboradores.</p>
+            </li>
+           </div>
+           
+        </ul>
+        
+      </section>
+      <section class=" px-32 py-24">
+        <h2 class="text-2xl text-center font-bold mb-16">Principais funcionalidades do ScoreSync</h2>
+        <div class="grid grid-cols-5">
+            <ul class="col-span-2 flex flex-col gap-4">
+                <li class="flex gap-4 shadow-md p-4 rounded-3xl">
+                    <img src="./public/images/functionalities/Group 2511.svg" alt="" class="w-20 group-hover:animate-bounce">
+                    <div>
+                        <h4 class="font-bold">Gestão de Competições</h4>
+                        <p class="text-xs">Organize e gerencie competições com facilidade, incluindo a criação de novas competições, definição de datas e alocação de recursos.</p>
+                    </div>
+                  
+                </li>
+                <li class="flex gap-4 shadow-md p-4 rounded-3xl">
+                    <img src="./public/images/functionalities/Group 2511.svg" alt="" class="w-20 group-hover:animate-bounce">
+                    <div>
+                        <h4 class="font-bold">Gestão de Competições</h4>
+                        <p class="text-xs">Organize e gerencie competições com facilidade, incluindo a criação de novas competições, definição de datas e alocação de recursos.</p>
+                    </div>
+                  
+                </li>
+                <li class="flex gap-4 shadow-md p-4 rounded-3xl">
+                    <img src="./public/images/functionalities/Group 2511.svg" alt="" class="w-20 group-hover:animate-bounce">
+                    <div>
+                        <h4 class="font-bold">Gestão de Competições</h4>
+                        <p class="text-xs">Organize e gerencie competições com facilidade, incluindo a criação de novas competições, definição de datas e alocação de recursos.</p>
+                    </div>
+                  
+                </li>
+                <li class="flex gap-4 shadow-md p-4 rounded-3xl">
+                    <img src="./public/images/functionalities/Group 2511.svg" alt="" class="w-20 group-hover:animate-bounce">
+                    <div>
+                        <h4 class="font-bold">Gestão de Competições</h4>
+                        <p class="text-xs">Organize e gerencie competições com facilidade, incluindo a criação de novas competições, definição de datas e alocação de recursos.</p>
+                    </div>
+                  
+                </li>
+            </ul>
+            <div class="col-span-3">
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+      <!-- Footer content goes here -->
+    </footer>
+  </body>
+</html>
