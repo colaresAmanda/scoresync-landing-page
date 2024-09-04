@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hamburger-btn.active #line1 {
+  transform: rotate(45deg) translate(8px, 5px);
+}
+#hamburger-btn.active #line2 {
+  opacity: 0;
+}
+#hamburger-btn.active #line3 {
+  transform: rotate(-45deg) translate(8px, -5px);
+}
+
+
