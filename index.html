@@ -12,16 +12,16 @@
     />
   </head>
   <body class="font-sans">
-    <header class="relative  z-50">
+    <header class="relative z-50">
       <nav
-      class="bg-white fixed z-40 shadow w-full flex flex-col justify-between px-4 py-4 md:px-6 md:py-6 lg:py-2 h-[4.5rem] md:h-20 overflow-hidden transform duration-200 ease-in lg:h-auto lg:flex-row "
-      aria-label="Main Navigation"
-      id="menu"
-    >
-        <div class="flex justify-between items-center ">
+        class="bg-white fixed z-40 shadow w-full flex flex-col justify-between px-4 py-4 md:px-6 md:py-6 lg:py-2 h-[4.5rem] md:h-20 overflow-hidden transform duration-200 ease-in lg:h-auto lg:flex-row"
+        aria-label="Main Navigation"
+        id="menu"
+      >
+        <div class="flex justify-between items-center">
           <a
             href="#"
-            class="flex gap-2 items-center "
+            class="flex gap-2 items-center"
             aria-label="Score Sync - Gerenciador de Competições"
           >
             <img
@@ -38,17 +38,32 @@
               >
             </div>
           </a>
-          
-         <!-- Hamburger button -->
-        <button id="hamburger-btn" class="relative w-7 h-5 flex flex-col justify-between items-center focus:outline-none  lg:hidden">
-          <span class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded" id="line1"></span>
-          <span class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded" id="line2"></span>
-          <span class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded" id="line3"></span>
-        </button>
+
+          <!-- Hamburger button -->
+          <button
+            id="hamburger-btn"
+            class="relative w-7 h-5 flex flex-col justify-between items-center focus:outline-none lg:hidden"
+          >
+            <span
+              class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded"
+              id="line1"
+            ></span>
+            <span
+              class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded"
+              id="line2"
+            ></span>
+            <span
+              class="block w-full h-0.5 bg-gray-600 transition-transform duration-300 ease-in-out rounded"
+              id="line3"
+            ></span>
+          </button>
           <!-- <img src="./public/images/svg/close-svgrepo-com (1).svg" alt="" class="w-6 h-6" /> -->
         </div>
 
-        <ul class="flex gap-8 flex-col items-center my-16 lg:flex-row lg:my-auto"  role="menu">
+        <ul
+          class="flex gap-8 flex-col items-center my-16 lg:flex-row lg:my-auto"
+          role="menu"
+        >
           <li role="menuitem">
             <a href="#" class="text-sm text-charcoal-600">Início</a>
           </li>
@@ -64,66 +79,76 @@
         </ul>
         <a
           href="#"
-          class="px-6 py-4  lg:py-2 text-sm bg-primary-100/75 rounded-full text-primary-600 font-semibold flex items-center justify-center"
+          class="px-6 py-4 lg:py-2 text-sm bg-primary-100/75 rounded-full text-primary-600 font-semibold flex items-center justify-center"
           >Ver Planos</a
         >
       </nav>
     </header>
-    <main class="bg-image pt-32  md:pt-48 lg:pt-40 px-6 md:px-32 ">
+    <main class="bg-image pt-32 md:pt-48 lg:pt-40 px-6 md:px-32">
       <section
-      class="lg:grid lg:grid-cols-7 md:gap-16  "
-      aria-labelledby="hero-heading"
-    >
-      <div class="md:flex md:flex-col md:gap-2 md:items-start md:col-span-3">
-        <p class="text-sm" aria-label="Introductory Text">
-          Organização e Gerenciamento Sem Esforço
-        </p>
-        <h1 id="hero-heading" class="text-3xl font-bold">
-          Sua solução definitiva para
-          <span class="text-primary-600">gerenciamento</span> de competições
-        </h1>
-        <p class="mt-4">
-          Gerencie suas competições de forma eficiente com o ScoreSync. Nosso
-          aplicativo simplifica todo o processo, desde a inscrição até as
-          classificações finais, garantindo uma experiência tranquila e eficiente
-          para organizadores e participantes.
-        </p>
-        <!-- TO-DO: fix the z-index -->
-        <img
-          class="lg:hidden py-4 my-4 translate-x-5 z-0"
-          src="./public/images/hero-image.png"
-          alt="Hero image showing competition management interface"
-        />
-        <!-- <img
+        class="lg:grid lg:grid-cols-7 md:gap-16"
+        aria-labelledby="hero-heading"
+      >
+        <div class="md:flex md:flex-col md:gap-2 md:items-start md:col-span-3">
+          <p class="text-sm" aria-label="Introductory Text">
+            Organização e Gerenciamento Sem Esforço
+          </p>
+          <h1 id="hero-heading" class="text-3xl font-bold">
+            Sua solução definitiva para
+            <span class="text-primary-600">gerenciamento</span> de competições
+          </h1>
+          <p class="mt-4">
+            Gerencie suas competições de forma eficiente com o ScoreSync. Nosso
+            aplicativo simplifica todo o processo, desde a inscrição até as
+            classificações finais, garantindo uma experiência tranquila e
+            eficiente para organizadores e participantes.
+          </p>
+          <!-- TO-DO: fix the z-index -->
+          <img
+            class="lg:hidden py-4 my-4 translate-x-5 z-0"
+            src="./public/images/hero-image.png"
+            alt="Hero image showing competition management interface"
+          />
+          <!-- <img
         class="lg:hidden py-4 my-4  "
         src="./public/images/hero-image.png"
         alt="Hero image showing competition management interface"
       /> -->
-        <a
-          href="#"
-          class="px-6 py-2 text-lg bg-primary-600 rounded-full text-white font-semibold"
-          >Ver promoção</a
-        >
-      </div>
-      <div class="md:col-span-4 hidden lg:block">
-        <img
-          class="md:w-[232rem]"
-          src="./public/images/hero-image.png"
-          alt="Hero image showing competition management interface"
-        />
-      </div>
-    </section>
+          <a
+            href="#"
+            class="px-6 py-2 text-lg bg-primary-600 rounded-full text-white font-semibold"
+            >Ver promoção</a
+          >
+        </div>
+        <div class="md:col-span-4 hidden lg:block">
+          <img
+            class="md:w-[232rem]"
+            src="./public/images/hero-image.png"
+            alt="Hero image showing competition management interface"
+          />
+        </div>
+      </section>
       <section>
         <!-- Implement later -->
       </section>
-      <section class=" py-24">
+      <section class="py-24">
         <h2 class="text-2xl md:text-center font-bold mb-16">
-          Para quais <span class="text-primary-600">modalidades</span> o ScoreSync é perfeito?
+          Para quais <span class="text-primary-600">modalidades</span> o
+          ScoreSync é perfeito?
         </h2>
-        <ul id="modalitiesList" class="flex flex-col md:flex-row lg:flex-col md:gap-x-10 justify-center items-center md:gap-y-16">
+        <ul
+          id="modalitiesList"
+          class="flex flex-col md:flex-row lg:flex-col md:gap-x-10 justify-center items-center md:gap-y-16"
+        >
           <div class="flex flex-col lg:flex-row gap-10">
-            <li class="transition-transform duration-300 md:duration-200 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
-              <img src="./public/images/modalities/individual.webp" alt="" class="w-24 group-hover:animate-bounce" />
+            <li
+              class="transition-transform duration-300 md:duration-200 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group"
+            >
+              <img
+                src="./public/images/modalities/individual.webp"
+                alt=""
+                class="w-24 group-hover:animate-bounce"
+              />
               <div>
                 <h4 class="font-semibold text-center">
                   Competições Individuais
@@ -134,21 +159,29 @@
                 </p>
               </div>
             </li>
-            <li class="transition-transform duration-300 md:duration-300 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
-              <img src="./public/images/modalities/team.webp" alt="" class="w-24 group-hover:animate-bounce" />
-              <h4 class="font-semibold text-center">
-                Torneios em Equipe
-              </h4>
+            <li
+              class="transition-transform duration-300 md:duration-300 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group"
+            >
+              <img
+                src="./public/images/modalities/team.webp"
+                alt=""
+                class="w-24 group-hover:animate-bounce"
+              />
+              <h4 class="font-semibold text-center">Torneios em Equipe</h4>
               <p class="text-xs text-center">
                 Ideal para competições que envolvem times, facilitando a gestão
                 das equipes e a organização das partidas.
               </p>
             </li>
-            <li class="transition-transform duration-300 md:duration-500 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
-              <img src="./public/images/modalities/events.webp" alt="" class="w-24 group-hover:animate-bounce" />
-              <h4 class="font-semibold text-center">
-                Eventos Esportivos
-              </h4>
+            <li
+              class="transition-transform duration-300 md:duration-500 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group"
+            >
+              <img
+                src="./public/images/modalities/events.webp"
+                alt=""
+                class="w-24 group-hover:animate-bounce"
+              />
+              <h4 class="font-semibold text-center">Eventos Esportivos</h4>
               <p class="text-xs text-center">
                 Organize e administre grandes modalidades esportivas com
                 eficiência, mantendo a competitividade e a forma física dos
@@ -157,21 +190,29 @@
             </li>
           </div>
           <div class="flex flex-col lg:flex-row gap-10">
-            <li class="transition-transform duration-300 md:duration-200 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
-              <img src="./public/images/modalities/academic.webp" alt="" class="w-24 group-hover:animate-bounce" />
-              <h4 class="font-semibold text-center">
-                Competições Acadêmicas
-              </h4>
+            <li
+              class="transition-transform duration-300 md:duration-200 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group"
+            >
+              <img
+                src="./public/images/modalities/academic.webp"
+                alt=""
+                class="w-24 group-hover:animate-bounce"
+              />
+              <h4 class="font-semibold text-center">Competições Acadêmicas</h4>
               <p class="text-xs text-center">
                 Excelentes para competições acadêmicas, incentivando o estudo e
                 o desenvolvimento dos participantes de forma efetiva.
               </p>
             </li>
-            <li class="transition-transform duration-300 md:duration-300 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group">
-              <img src="./public/images/modalities/corporation.webp" alt="" class="w-24 group-hover:animate-bounce" />
-              <h4 class="font-semibold text-center">
-                Desafios Corporativos
-              </h4>
+            <li
+              class="transition-transform duration-300 md:duration-300 ease-in translate-y-32 bg-white w-64 flex flex-col justify-center items-center shadow-lg rounded-xl px-10 py-12 gap-2 group"
+            >
+              <img
+                src="./public/images/modalities/corporation.webp"
+                alt=""
+                class="w-24 group-hover:animate-bounce"
+              />
+              <h4 class="font-semibold text-center">Desafios Corporativos</h4>
               <p class="text-xs text-center">
                 Perfeito para empresas que querem estimular a competição
                 interna, ajudando a aumentar a motivação e o engajamento dos
@@ -180,77 +221,122 @@
             </li>
           </div>
         </ul>
-        
-        
       </section>
-      <section class="px-32 py-24">
-        <h2 class="md:text-2xl md:text-center md:font-bold md:mb-16">
-          Principais funcionalidades do ScoreSync
+      <section class="md:px-32 md:py-24" id="modalities">
+        <h2 class="text-2xl md:text-center font-bold md:mb-16">
+          Principais <span class="text-primary-600">funcionalidades</span> do
+          ScoreSync
         </h2>
-        <div class="md:grid md:grid-cols-5">
-          <ul class="md:col-span-2 md:flex md:flex-col md:gap-4">
-            <li class="md:flex md:gap-4 md:shadow-md md:p-4 md:rounded-3xl">
-              <img
-                src="./public/images/functionalities/Group 2511.svg"
-                alt=""
-                class="md:w-20 md:group-hover:animate-bounce"
-              />
+        <div class="md:grid md:grid-cols-5" #>
+          <ul class="md:col-span-2 flex flex-col gap-4" id="functionalitiesList">
+            <li
+              data-video="/gestao-de-competicoes.mp4"
+              class="flex gap-4 bg-white shadow-md px-4 py-4 rounded-xl"
+            >
+              <div class="md:bg-red-500 md:w-16 md:h-16 md:p-4 rounded-full flex items-center justify-center">
+                <img
+                  src="./public/images/functionalities/trophy-svgrepo-com 1.svg"
+                  alt=""
+                  class="w-32 md:group-hover:animate-bounce"
+                />
+              </div>
               <div>
-                <h4 class="md:font-bold">Gestão de Competições</h4>
-                <p class="md:text-xs">
-                  Organize e gerencie competições com facilidade, incluindo a
-                  criação de novas competições, definição de datas e alocação de
-                  recursos.
+                <h4 class="font-bold">Gestão de Competições</h4>
+                <p class="text-xs">
+                  Organize e gerencie competições com facilidade, incluindo a criação de
+                  novas competições, definição de datas e alocação de recursos.
                 </p>
               </div>
             </li>
-            <li class="md:flex md:gap-4 md:shadow-md md:p-4 md:rounded-3xl">
-              <img
-                src="./public/images/functionalities/Group 2511.svg"
-                alt=""
-                class="md:w-20 md:group-hover:animate-bounce"
-              />
+            <!-- Video player -->
+            <video controls class="w-full" id="videoPlayer-gestao">
+              <source src="./public/videos/gestao-de-competicoes.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          
+            <li
+              data-video="/cadastro-de-participantes.mp4"
+              class="flex gap-4 bg-white shadow-md px-4 py-4 rounded-xl"
+              id="cadastro-de-participantes"
+            >
+              <div class="md:bg-red-500 md:w-16 md:h-16 md:p-4 rounded-full flex items-center justify-center">
+                <img
+                  src="./public/images/functionalities/users-group-svgrepo-com 1.svg"
+                  alt=""
+                  class="w-32 md:group-hover:animate-bounce"
+                />
+              </div>
               <div>
-                <h4 class="md:font-bold">Gestão de Competições</h4>
-                <p class="md:text-xs">
-                  Organize e gerencie competições com facilidade, incluindo a
-                  criação de novas competições, definição de datas e alocação de
-                  recursos.
+                <h4 class="font-bold">Cadastro de Participantes</h4>
+                <p class="text-xs">
+                  Registre e gerencie os participantes das competições, com informações
+                  detalhadas e controle total sobre os dados.
                 </p>
               </div>
             </li>
-            <li class="md:flex md:gap-4 md:shadow-md md:p-4 md:rounded-3xl">
-              <img
-                src="./public/images/functionalities/Group 2511.svg"
-                alt=""
-                class="md:w-20 md:group-hover:animate-bounce"
-              />
+            <!-- Video player -->
+            <video controls class="w-full" id="videoPlayer-cadastro">
+              <source src="./public/videos/cadastro-de-participantes.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          
+            <li
+              data-video="/gestao-rankings.mp4"
+              class="flex gap-4 bg-white shadow-md px-4 py-4 rounded-xl"
+              id="gestao-rankings"
+            >
+              <div class="md:bg-red-500 md:w-16 md:h-16 md:p-4 rounded-full flex items-center justify-center">
+                <img
+                  src="./public/images/functionalities/leaderboard-star-svgrepo-com 1.svg"
+                  alt=""
+                  class="w-32 md:group-hover:animate-bounce"
+                />
+              </div>
               <div>
-                <h4 class="md:font-bold">Gestão de Competições</h4>
-                <p class="md:text-xs">
-                  Organize e gerencie competições com facilidade, incluindo a
-                  criação de novas competições, definição de datas e alocação de
-                  recursos.
+                <h4 class="font-bold">Gestão de Rankings</h4>
+                <p class="text-xs">
+                  Acompanhe as pontuações em tempo real e gere rankings automaticamente,
+                  facilitando a visualização dos melhores competidores.
                 </p>
               </div>
             </li>
-            <li class="md:flex md:gap-4 md:shadow-md md:p-4 md:rounded-3xl">
-              <img
-                src="./public/images/functionalities/Group 2511.svg"
-                alt=""
-                class="md:w-20 md:group-hover:animate-bounce"
-              />
+            <!-- Video player -->
+            <video controls class="w-full" id="videoPlayer-rankings">
+              <source src="./public/videos/gestao-rankings.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+          
+            <li
+              data-video="/relatorios-detalhados.mp4"
+              class="flex gap-4 bg-white shadow-md px-4 py-4 rounded-xl"
+              id="relatorios-detalhados"
+            >
+              <div class="md:bg-red-500 md:w-16 md:h-16 md:p-4 rounded-full flex items-center justify-center">
+                <img
+                  src="./public/images/functionalities/graph-lines-clipboard-svgrepo-com 1.svg"
+                  alt=""
+                  class="w-32 md:group-hover:animate-bounce"
+                />
+              </div>
               <div>
-                <h4 class="md:font-bold">Gestão de Competições</h4>
-                <p class="md:text-xs">
-                  Organize e gerencie competições com facilidade, incluindo a
-                  criação de novas competições, definição de datas e alocação de
-                  recursos.
+                <h4 class="font-bold">Relatórios Detalhados</h4>
+                <p class="text-xs">
+                  Organize e gerencie competições com facilidade, incluindo a criação de
+                  novas competições, definição de datas e alocação de recursos.
                 </p>
               </div>
             </li>
+            <!-- Video player -->
+            <video controls class="w-full" id="videoPlayer-relatorios">
+              <source src="./public/videos/relatorios-detalhados.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </ul>
-          <div class="md:col-span-3"></div>
+          
+
+          <div class="md:col-span-3">
+            <video id="videoPlayer-desktop" controls style="display:none;"></video>
+          </div>
         </div>
       </section>
     </main>

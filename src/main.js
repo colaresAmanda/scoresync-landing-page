@@ -86,3 +86,77 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", animateOnScroll);
 });
 
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Get all <li> elements with the data-video attribute
+  const functionalityItems = document.querySelectorAll("[data-video]");
+  
+  // Get all video elements
+  const videoPlayers = Array.from(document.querySelectorAll("video"));
+
+  // Get the specific <h4> element for "Gestão de Competições"
+  const gestaoHeading = document.querySelector('h4.font-bold');
+
+  // Mute all videos initially
+  videoPlayers.forEach(video => video.muted = true);
+
+  // Function to check if an element is in the viewport
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  // Function to play a video if it's in the viewport and not already playing
+  function playVideo(videoPlayer) {
+    if (videoPlayer.paused) {
+      setTimeout(() => {
+        videoPlayer.play().catch(error => {
+          console.error('Failed to play video:', error);
+        });
+      }, 150); // Delay to avoid play() rejection
+    }
+  }
+
+  // Function to handle video sequence
+  function playNextVideo(index) {
+    if (index < videoPlayers.length) {
+      const nextVideo = videoPlayers[index];
+      nextVideo.scrollIntoView({ behavior: 'smooth' });
+      
+      // Play the next video after scrolling into view
+      setTimeout(() => {
+        playVideo(nextVideo);
+      }, 300); // Delay to ensure smooth scroll finishes
+    }
+  }
+
+  // When a video ends, play the next video
+  videoPlayers.forEach((videoPlayer, index) => {
+    videoPlayer.addEventListener("ended", () => {
+      playNextVideo(index + 1);
+    });
+  });
+
+  // Function to handle scroll and start the first video when the specific <h4> comes into view
+  function handleScroll() {
+    if (isInViewport(gestaoHeading) && videoPlayers[0].paused) {
+      // Start playing the first video when <h4> is in view
+      playVideo(videoPlayers[0]);
+      window.removeEventListener('scroll', handleScroll); // Remove scroll event listener once the first video starts
+    }
+  }
+
+  // Listen for scroll events to trigger the first video play
+  window.addEventListener('scroll', handleScroll);
+});
