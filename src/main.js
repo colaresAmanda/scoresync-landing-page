@@ -28,3 +28,61 @@ btn.addEventListener('click', () => {
     menu.classList.add('h-[4.5rem]', 'md:h-20');
   }
 });
+
+
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  // const listItems = document.querySelectorAll("ul li");
+  const listItems = document.querySelectorAll("#modalitiesList li");
+
+  function animateOnScroll() {
+    listItems.forEach((item) => {
+      const rect = item.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      
+      // Logic for different screen sizes
+      if (window.matchMedia("(min-width: 1024px)").matches) {
+        // Large screens (lg)
+        if (rect.top <= windowHeight * 0.8) {
+          item.classList.add("translate-y-0", "opacity-100");
+          item.classList.remove("translate-y-32", "opacity-0");
+        } else {
+          item.classList.add("translate-y-32", "opacity-0");
+          item.classList.remove("translate-y-0", "opacity-100");
+        }
+      } else if (window.matchMedia("(min-width: 768px)").matches) {
+        // Medium screens (md)
+        if (rect.top <= windowHeight * 0.9) {
+          item.classList.add("translate-y-0", "opacity-100");
+          item.classList.remove("translate-y-32", "opacity-0");
+        } else {
+          item.classList.add("translate-y-32", "opacity-0");
+          item.classList.remove("translate-y-0", "opacity-100");
+        }
+      } else {
+        // Small screens (sm)
+        if (rect.top <= windowHeight) {
+          item.classList.add("translate-y-0", "opacity-100");
+          item.classList.remove("translate-y-32", "opacity-0");
+        } else {
+          item.classList.add("translate-y-32", "opacity-0");
+          item.classList.remove("translate-y-0", "opacity-100");
+        }
+      }
+    });
+  }
+
+  // Initial check
+  animateOnScroll();
+
+  // Listen to scroll events
+  window.addEventListener("scroll", animateOnScroll);
+});
+

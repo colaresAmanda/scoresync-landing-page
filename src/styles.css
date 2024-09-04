@@ -12,4 +12,8 @@
   transform: rotate(-45deg) translate(8px, -5px);
 }
 
-
+.bg-image {
+background-image: url('/public/images/bg.png');
+  background-size: cover;  /* Ensures the image covers the entire element */
+  background-position: center;  /* Centers the image */
+}
